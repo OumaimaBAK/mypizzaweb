@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pizza.css">
+
+    <audio id="hoverSound" src="hover.mp3"></audio>
+
+</head>
+
+<body>
+    <div id="header" >
+        <div id="top">
+            <h1>Dora's</h1>
+            <nav id="nav-buttons">
+                <button onclick="location.href='#header'" class="top" id="home">HOME</button>
+                <button onclick="location.href='#menuSection'" class="top" id="menu">MENU</button>
+                <button onclick="location.href='#aboutSection'" class="top" id="about">ABOUT</button>
+                <button onclick="location.href='#contact-us'" class="top" id="contact">CONTACT</button>
+                
+            </nav>
+        </div>
+
+
+        <div id="wlcome">
+            <p id="welcoming">Welcome to <span class="gold-word">Dora's</span> Pizzeria The BEST in town !</p>
+            <p id="welcomingSecond">Experience the most <span class="red-word">authentic</span> flavors of southern Italy here</p>
+            <p id="welcomingThird">we serve italian pizzas made with high quality ingredients right from our local farms</p>
+            <img id="pizza1" src="images/pizza1.png">
+        </div>
+    </div>
+    
+    <div id="menuSection">
+        <div id="orientale">
+            <button  class="pizzas"  id="orientalebtn"> 
+                <h1 style="font-family: alex; font-size: 30px;;opacity: 90%">Orientale</h1>
+                <img src="images/orientale.png" id="orientale-img">
+                <p>BIG : 60Dh <br>MEDUIM  : 50Dh<br>SMALL : 40Dh</p>
+            </button>
+            <button class="pizzas"  id="margueritabtn">
+                <h1 style="font-family: alex; font-size: 30px;;opacity: 90%">Marguerita</h1>
+                <img src="images/Marguerita.png" id="marguerita-img">
+                <p>BIG : 60Dh <br>MEDUIM  : 50Dh<br>SMALL : 40Dh</p>
+            </button>
+            <button class="pizzas"  id="fermierebtn">
+                <h1 style="font-family: alex; font-size: 30px ;opacity: 90%;">Fermiere</h1>
+                <img src="images/Fermiere.png" id="fermiere-img">
+                <p>BIG : 60Dh <br>MEDUIM  : 50Dh<br>SMALL : 40Dh</p>                
+            </button>
+            <button class="pizzas"  id="campagnardebtn">
+                <h1 style="font-family: alex; font-size: 30px; opacity: 90%;">Campagnarde</h1>
+                <img src="images/Campagnarde.png" id="campagnarde-img">
+                <p>BIG : 60Dh <br>MEDUIM  : 50Dh<br>SMALL : 40Dh</p>
+            </button><br>
+            <h1 id="choice">press on your choice to<br> order</h1>
+        </div>
+    </div>
+        
+    <div id="aboutSection" style="padding-left: 30px;">
+        <h1 style="font-size: 50px; ">About us</h1>
+        <h2>we serve fresh, handmade pizzas straight from our stone oven — crafted
+             with love, tradition, and the finest local ingredients
+        </h2>
+        <div id="photo-details">
+            <p>Founded in 2023, our mission is simple: bring people together over 
+            a perfect slice. Whether you love a classic Margherita or want to explore 
+            bold new flavors, we've got something for every craving.</p>
+
+            <h3>located in : n:2 Mohammed 5 bloc 3 <br> open:24/7</h3>
+            <img src="images/group-photo.png">
+        </div>
+    </div>
+    <h1 id="contact-h1">Contact us </h1>
+    <div id="contact-us" style="padding-left: 30px;">
+        
+        <div id="contact-links" >
+            <p>“We’d love to hear from you! Whether you want to place an order, ask a question, or share your feedback, our team at Dora’s Pizzeria is always ready to help. Reach out to us by phone, email, or social media — and we’ll make sure you get the perfect slice every time. Your satisfaction is our secret ingredient!”</p>
+            <a href="https://wa.me/212621960236"> <img src="images/whatsapp.png">Chat on WhatsApp</a><br>
+            <a href="https://www.instagram.com/0uma_ima_/" target="_blank"><img src="images/instagram.png">our instagram profile</a><br>
+            <a href="mailto:bakarrouo@gmail.com"><img src="images/gmail.png">email us</a><br>
+            <iframe id ="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14033.196804258432!2d-11.12277503351666!3d28.440395700000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4a91005fd4c69f%3A0x1f6428ec7c62ccf!2sBig%20soulayman!5e0!3m2!1sfr!2sma!4v1751456498573!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <img src="images/logo.png" id="logo-image">
+        
+    </div>
+    <div id="footer"><button id="backToTop" onclick="location.href='#header'">Back to the Top</button></div>
+
+    <script src="pizza.js"></script>
+</body>
+
+
+</html>
