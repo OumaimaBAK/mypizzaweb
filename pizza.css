@@ -1,0 +1,252 @@
+@font-face {
+  font-family: alex;
+  src: url(alex.ttf);
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(255, 183, 0);
+}
+body{
+    background-color: #920B0B;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('images/tomatoes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position:center calc(50% + 420px);
+    overflow-x: hidden;
+    cursor: url('images/cursor.png'), auto;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+#top h1{
+    color:#FB811E;
+    padding-left: 20px;;
+    font-size: 50px;
+    font-family: alex;
+}
+.top{
+    background-color:transparent;
+    border:none;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    
+}
+
+#wlcome{
+    display:grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(3, 33.33%);  
+    
+}
+#welcoming{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-left: 70px;
+    font-size: 28px;
+    color: antiquewhite;
+    
+}
+.gold-word{
+    color: #FF9136;
+    font-weight: bolder;
+}
+
+#welcomingSecond{
+    grid-row: 3/4;
+    padding-left: 60px;
+    font-size: 22px;
+    color: antiquewhite;
+}
+.red-word{
+    color: #f94200;
+    font-weight: bolder;
+}
+#welcomingThird{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    padding-left: 60px;
+    font-size: 22px;
+    color: antiquewhite;
+}
+#pizza1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 320px;
+    height: 290px;
+    align-self: center;
+    align-content: center;
+    padding-left: 50px;
+    transition: all 0.3s ease;
+    animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#menuSection{
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+}
+
+
+.pizzas{
+    width: 200px;
+    height: 320px;
+    border-radius: 30px;
+    margin:40px; 
+    border:none;
+    background-color: #600D0D;
+    color: aliceblue;
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+.pizzas:hover{
+    
+    background-color: #3c0808;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px #f40, 0 0 40px #f40, 0 0 60px #f40;
+    color: aliceblue;
+    text-align: center;
+    align-content: first baseline;
+    cursor: url('images/cursor.png'), auto;
+}
+#orientale-img  ,#marguerita-img  ,#fermiere-img ,#campagnarde-img{
+  width: 150px;    
+  height: auto;     
+  display: block;
+  margin: 0 auto;   
+}
+#menuSection p{
+    font-size: 13px;
+    opacity: 80%;
+}
+#choice{
+    text-align: center;
+    background-color: #600D0D;
+    opacity: 70%;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+}
+#photo-details{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    gap:30px;
+   
+}
+#photo-details p , h3{
+    grid-column: 1/2;
+    color: aliceblue;
+    opacity: 80%;
+    
+}
+#photo-details p{
+    font-size: 25px;
+    opacity: 80%;
+    
+}
+
+#photo-details img{
+    grid-column: 2/3;
+    grid-row:1/2
+}
+#aboutSection h1{
+    color: aliceblue;
+    text-align: center;
+}
+#aboutSection h2{
+    color: aliceblue;
+    text-align: center;
+}
+
+#contact-us{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#contact-links{
+    color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+    
+}
+#logo-image{
+    justify-content: right;
+    padding-left: 50px;
+}
+#contact-links img ,a{
+    padding-top: 20px;
+    text-align: left;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    color: #ffc6b1;
+}
+#contact-links img{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+#location{
+    border-radius: 40px;
+    width: 500px;
+    height: 300px;
+    padding:30px;
+}
+#contact-h1{
+    justify-content:center;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+
+}
+#top button:hover{
+    background-color: #e48c44;
+    background: opacity 70%; ;
+    border-radius: 30px;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px #f40, 0 0 40px #f40, 0 0 60px #f40;
+}
+p:hover,h1:hover, h2:hover, h3:hover, h4:hover ,button:hover, a:hover , img:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0 20px #f40, 0 0 40px #f40, 0 0 60px #f40;
+}
+
+#footer{
+    display: flex;
+}
+#backToTop{
+    text-align: center;
+    background-color: #600D0D;
+    opacity: 70%;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+}
